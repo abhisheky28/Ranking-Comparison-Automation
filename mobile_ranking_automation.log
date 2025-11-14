@@ -1,0 +1,83 @@
+2025-11-10 15:49:27,868 - INFO - --- Starting MOBILE Ranking Automation Script ---
+2025-11-10 15:49:27,869 - INFO - Connecting to Google Sheet: '40 Keywork Rank Tracking'
+2025-11-10 15:49:31,191 - INFO - Successfully connected to Google Sheet.
+2025-11-10 15:49:31,191 - INFO - Fetching data from the worksheet...
+2025-11-10 15:49:31,651 - INFO - Successfully fetched 40 keywords.
+2025-11-10 15:49:31,651 - INFO - Processing a batch of 40 keywords.
+2025-11-10 15:49:31,651 - INFO - Initializing MOBILE Chrome WebDriver (Emulating Pixel 5)...
+2025-11-10 15:49:31,651 - INFO - ====== WebDriver manager ======
+2025-11-10 15:49:33,699 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-10 15:49:34,203 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-10 15:49:34,722 - INFO - Driver [C:\Users\Abhishek Yadav\.wdm\drivers\chromedriver\win64\142.0.7444.61\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-10 15:49:37,908 - CRITICAL - A critical, unhandled error occurred: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7d58d3
+	0x7d5914
+	0x5ee76d
+	0x623902
+	0x61ff9a
+	0x668993
+	0x66830a
+	0x65c766
+	0x62dac0
+	0x62ede4
+	0xa57974
+	0xa52bea
+	0x7fe5c4
+	0x7edd38
+	0x7f4d9d
+	0x7ddee8
+	0x7de0ac
+	0x7c7d2a
+	0x77315d49
+	0x77e1d6db
+	0x77e1d661
+Traceback (most recent call last):
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\mobile_main.py", line 161, in <module>
+    driver = get_humanlike_driver()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\mobile_main.py", line 88, in get_humanlike_driver
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 71, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 263, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 366, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7d58d3
+	0x7d5914
+	0x5ee76d
+	0x623902
+	0x61ff9a
+	0x668993
+	0x66830a
+	0x65c766
+	0x62dac0
+	0x62ede4
+	0xa57974
+	0xa52bea
+	0x7fe5c4
+	0x7edd38
+	0x7f4d9d
+	0x7ddee8
+	0x7de0ac
+	0x7c7d2a
+	0x77315d49
+	0x77e1d6db
+	0x77e1d661
+
+2025-11-10 15:49:37,908 - INFO - Preparing to send error email to: abhishek.yadav@infidigit.com
+2025-11-10 15:49:41,134 - INFO - Error email sent successfully.
+2025-11-10 15:49:41,359 - INFO - --- MOBILE Ranking Automation Script Finished ---

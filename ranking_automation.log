@@ -1,0 +1,87 @@
+2025-11-10 15:30:52,011 - INFO - Attempting to terminate any running Chrome processes...
+2025-11-10 15:30:55,386 - INFO - --- Starting Ranking Automation Script ---
+2025-11-10 15:30:55,386 - INFO - Connecting to Google Sheet: '40 Keywork Rank Tracking'
+2025-11-10 15:30:59,217 - INFO - Successfully connected to Google Sheet.
+2025-11-10 15:30:59,217 - INFO - Fetching data from the worksheet...
+2025-11-10 15:30:59,687 - INFO - Successfully fetched 40 keywords.
+2025-11-10 15:30:59,687 - INFO - Processing a batch of 40 keywords.
+2025-11-10 15:30:59,687 - INFO - Initializing human-like Chrome WebDriver in INCOGNITO mode...
+2025-11-10 15:30:59,687 - INFO - Using User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+2025-11-10 15:30:59,687 - INFO - ====== WebDriver manager ======
+2025-11-10 15:31:03,207 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-10 15:31:04,443 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-10 15:31:06,244 - INFO - Driver [C:\Users\Abhishek Yadav\.wdm\drivers\chromedriver\win64\142.0.7444.61\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-10 15:31:14,513 - INFO - 
+--- Processing keyword 1/40: 'life insurance policy' ---
+2025-11-10 15:31:22,376 - CRITICAL - A critical, unhandled error occurred: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=142.0.7444.134); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xde58d3
+	0xde5914
+	0xbfe76d
+	0xbed980
+	0xc0c734
+	0xc734c5
+	0xc8e799
+	0xc6c766
+	0xc3dac0
+	0xc3ede4
+	0x1067974
+	0x1062bea
+	0xe0e5c4
+	0xdfdd38
+	0xe04d9d
+	0xdedee8
+	0xdee0ac
+	0xdd7d2a
+	0x77315d49
+	0x77e1d6db
+	0x77e1d661
+Traceback (most recent call last):
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\incognito_main.py", line 194, in <module>
+    if not find_and_type_in_search_box(driver, keyword):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\incognito_main.py", line 77, in find_and_type_in_search_box
+    search_box.send_keys(Keys.RETURN)
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 303, in send_keys
+    self._execute(
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 572, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Abhishek Yadav\Documents\40 Keywork Rank Tracking\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=142.0.7444.134); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xde58d3
+	0xde5914
+	0xbfe76d
+	0xbed980
+	0xc0c734
+	0xc734c5
+	0xc8e799
+	0xc6c766
+	0xc3dac0
+	0xc3ede4
+	0x1067974
+	0x1062bea
+	0xe0e5c4
+	0xdfdd38
+	0xe04d9d
+	0xdedee8
+	0xdee0ac
+	0xdd7d2a
+	0x77315d49
+	0x77e1d6db
+	0x77e1d661
+
+2025-11-10 15:31:22,391 - INFO - Preparing to send error email to: abhishek.yadav@infidigit.com
+2025-11-10 15:31:25,287 - INFO - Error email sent successfully.
+2025-11-10 15:31:25,546 - INFO - Closing WebDriver.
+2025-11-10 15:31:27,613 - INFO - --- Ranking Automation Script Finished ---
